@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #2d0c59 0%, #0b0607 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.login-box {
+  position: relative;
+  z-index: 2;
+  background: rgba(49, 15, 130, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: rgb(223, 213, 213);
+  width: 320px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.login-box h1 {
+  color: #bbb5b9;
+  margin-bottom: 5px;
+}
+
+.login-box p {
+  color: #e8e2e8;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* إدخال البيانات مع الأيقونات */
+.input-box {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #fbfafa;
+  opacity: 0.8;
+}
+
+.input-box input {
+  width: 300px;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 15px;
+  background: rgba(244, 240, 240, 0.2);
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-box button {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #000000, #00f2fe);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #4facfe;
+}
+
+/* النص */
+.social-text {
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* الأيقونات */
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px #4facfe;
+}
